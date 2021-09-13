@@ -19,3 +19,23 @@
 rgbToHex(255, 0, 0); // "ff00000"
 hexToRgb("00ff00"); // {r: 0, g: 255,b : 0}
 ```
+
+## Hints
+
+1. converting a string to a number
+
+```js
+parseInt("124", 10) === 124;
+```
+
+2. converting a number to a hexadecimal string
+
+```js
+parseInt(124, 10).toString(16) === "7c";
+```
+
+3. converting a hexadecimal number to a string.
+
+```js
+parseInt("7c", 16).toString(16) === 124;
+```
