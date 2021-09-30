@@ -52,7 +52,7 @@ describe("adding items via add(name, price, qty) works", () => {
     expect(c.length).toBe(2);
   });
   test('length is 7 after cart.add("Lime", 150.00);', () => {
-    c.add("Lime", 150.0);
+    c.add("Lime", 150.0, 1);
     expect(c.length).toBe(3);
   });
 });

@@ -2,13 +2,13 @@ import { HasEmail, HasPhoneNumber } from "./1-basics";
 
 //== FUNCTIONS ==//
 
-// (1) function arguments and return values can have type annotations
-// function sendEmail(to: HasEmail): { recipient: string; body: string } {
-//   return {
-//     recipient: `${to.name} <${to.email}>`, // Mike <mike@example.com>
-//     body: "You're pre-qualified for a loan!"
-//   };
-// }
+//(1) function arguments and return values can have type annotations
+function sendEmail(to?: string): { recipient: string; body: string } {
+  return {
+    recipient: `${to.name} <${to.email}>`, // Mike <mike@example.com>
+    body: "You're pre-qualified for a loan!",
+  };
+}
 
 // (2) or the arrow-function variant
 // const sendTextMessage = (
